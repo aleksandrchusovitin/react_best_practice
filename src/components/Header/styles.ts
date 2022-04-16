@@ -3,8 +3,8 @@ import { SxStyles } from '../../types/theme';
 const styles: SxStyles = {
   root: {
     width: {
-      mobile: '100px',
-      desktop: '300px',
+      mobile: '20px',
+      desktop: '150px',
     },
     height: '300px',
     backgroundColor: 'orange.main',

@@ -12,7 +12,7 @@ declare module '@mui/material/styles' {
     lg: false;
     xl: false;
     mobile: true;
-    fabler: true;
+    fablet: true;
     tablet: true;
     desktop: true;
     largeScreen: true;
