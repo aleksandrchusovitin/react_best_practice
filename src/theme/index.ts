@@ -14,5 +14,5 @@ const theme: Theme = createAppTheme({
 });
 
 export default createTheme(theme, {
-  typography: makeTypography(),
+  typography: makeTypography(theme),
 });

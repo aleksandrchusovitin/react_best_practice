@@ -3,11 +3,20 @@ import { SxStyles } from '../../types/theme';
 const styles: SxStyles = {
   root: {
     width: {
-      mobile: '20px',
-      desktop: '150px',
+      mobile: '100px',
+      tablet: '500px',
     },
     height: '300px',
-    backgroundColor: 'orange.main',
+    backgroundColor: {
+      mobile: 'black.main',
+      tablet: 'orange.main',
+    },
+  },
+  textBlock: {
+    color: {
+      mobile: 'white',
+      tablet: 'black.main',
+    },
   },
 };
 

@@ -1,3 +1,4 @@
+import { Theme } from '@mui/material';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 declare module '@mui/material/Typography' {
@@ -26,7 +27,10 @@ interface ExtendedTypographyOptions extends TypographyOptions {
   mainPageDescription: React.CSSProperties;
 }
 
-const makeTypography = (): ExtendedTypographyOptions => {
+const makeTypography = (theme: Theme): ExtendedTypographyOptions => {
+  const tablet = theme.breakpoints.up('tablet');
+  const desktop = theme.breakpoints.up('desktop');
+
   return {
     fontFamily: 'Roboto',
 
@@ -44,6 +48,19 @@ const makeTypography = (): ExtendedTypographyOptions => {
       fontWeight: 400,
       fontSize: 16,
       lineHeight: '16px',
+
+      [tablet]: {
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: 18,
+        lineHeight: '18px',
+      },
+      [desktop]: {
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: 24,
+        lineHeight: '24px',
+      },
     },
   };
 };
