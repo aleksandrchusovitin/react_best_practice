@@ -3,7 +3,6 @@ import { Typography } from '@mui/material';
 
 import { useScreen } from '../../hooks';
 import Box from '../Box';
-import Icon from '../Icon';
 
 import styles from './styles';
 
@@ -17,7 +16,7 @@ const Header: FC = () => {
           Some title
         </Typography>
         <Typography variant="mainPageDescription">Some text</Typography>
-        {lessThanTablet && <Icon name="blackHorse">Wow!!!!</Icon>}
+        {lessThanTablet && <Box>Wow!!!!</Box>}
       </Box>
     </Box>
   );
